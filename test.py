@@ -11,6 +11,6 @@ def test_home():
     response = client.get("/")
     assert response.json() == {"Hello": "World"}
 
-def_test_models():
-    assert_isinstance(scaler, StandardScaler)
-    assert_isinstance(model, RandomForestClassifier)
+def test_models():
+    assert isinstance(scaler, StandardScaler)
+    assert isinstance(model, RandomForestClassifier)
